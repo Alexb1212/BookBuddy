@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 
 import Homepage from "./components/Homepage.jsx"
+import SingleBookDetails from './components/BookDetails.jsx'
 
 const App = () => {
   
@@ -10,7 +11,8 @@ const App = () => {
 
     <Routes>
       <Route path='/' element={<Homepage />}/>
-      <Route path='/book-details/:id' element={<h2>Details of books</h2>}/>
+      <Route path='/book-details/:id' element={<SingleBookDetails />}/>
+      
     </Routes>
     </>
   )
